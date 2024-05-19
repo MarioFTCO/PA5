@@ -12,7 +12,8 @@ function AppRouter() {
     <BrowserRouter>
         <Navbar/>
         <Routes>
-            <Route path="/" index element={<Home/>} />
+            <Route path="/" index element={<Login/>} />
+            <Route path="/home" element={<Home/>} />
             <Route path="/español" element={<Español/>} />
             <Route path="/frances" element={<Frances/>} />
             <Route path="/ingles" element={<Ingles/>} />

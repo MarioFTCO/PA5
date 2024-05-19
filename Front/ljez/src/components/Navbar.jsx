@@ -7,14 +7,14 @@ function Navbar() {
     <div>
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/"><img src="/public/Icon.gif" alt="Logo" /></a>
+        <a href="/home"><img src="/public/Icon.gif" alt="Logo" /></a>
       </div>
       <div className="navbar-brand">
-          <Link to="/">LJEZ.com</Link>
+          <Link to="/home">LJEZ.com</Link>
       </div>
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link to="/" className="nav-link">
+          <Link to="/home" className="nav-link">
             Home
           </Link>
         </li>

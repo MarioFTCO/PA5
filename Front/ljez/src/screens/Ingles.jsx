@@ -16,15 +16,11 @@ function Ingles() {
          Aprenderás a presentarte, saludar, hacer preguntas sencillas y comprender instrucciones simples.
         </p>
         <p className="a">
-          <a href="/ingles" target="_blank">
-            Aprende dando click aqui
+          <a href='src/assets/ingles parte 1.zip' download="Inlges Nivel Basico">
+           Aprende dando click aqui
           </a>
         </p>
       </div>
-
-      <p className='frist'>
-        Una vez que domines el nivel básico, podrás avanzar al siguiente nivel para continuar fortaleciendo tus habilidades.
-      </p>
 
       <div className="card">
         <img src="https://source.unsplash.com/random/300x200" alt="Imagen 3" />
@@ -34,15 +30,11 @@ function Ingles() {
            Podrás sostener conversaciones más complejas sobre temas cotidianos y situaciones laborales.
         </p>
         <p className="a">
-          <a href="/ingles" target="_blank">
+        <a href='src/assets/ingles parte 2.zip' download="Inlges Nivel Intermedio">
             Aprende dando click aqui
           </a>
         </p>
       </div>
-
-      <p className='frist'>
-        Después de completar el nivel intermedio, estarás listo para enfrentar desafíos más avanzados en el idioma.
-      </p>
 
       <div className="card">
         <img src="https://source.unsplash.com/random/300x200" alt="Imagen 3" />
@@ -52,7 +44,7 @@ function Ingles() {
          Mejorarás tu fluidez, ampliarás tu vocabulario y aprenderás estructuras gramaticales más complejas.
         </p>
         <p className="a">
-          <a href="/ingles" target="_blank">
+        <a href='src/assets/ingles parte 3.zip' download="Inlges Nivel Avanzado">
             Aprende dando click aqui
           </a>
         </p>
@@ -71,7 +63,7 @@ function Ingles() {
         participar en reuniones y negociaciones en inglés.
         </p>
         <p className="a">
-          <a href="/ingles" target="_blank">
+        <a href='src/assets/ingles parte 4.zip' download="Inlges Nivel Negocios">
             Aprende dando click aqui
           </a>
         </p>
@@ -86,7 +78,7 @@ function Ingles() {
          Te brindaremos estrategias y práctica intensiva para obtener los puntajes requeridos.
         </p>
         <p className="a">
-          <a href="/ingles" target="_blank">
+        <a href='src/assets/ingles parte 4.zip' download="Inlges Nivel Preparación para Exámenes">
             Aprende dando click aqui
           </a>
         </p>
@@ -101,16 +93,18 @@ function Ingles() {
          escribir ensayos y presentaciones formales.
         </p>
         <p className="a">
-          <a href="/ingles" target="_blank">
+        <a href='src/assets/ingles parte 4.zip' download="Inlges Nivel Académico">
             Aprende dando click aqui
           </a>
         </p>
       </div>
 
       <p className="frist">
-              <h2>¡¿Porque es importante aprende ingles?</h2>
-        Idioma global: El inglés es el idioma más hablado y extendido en el mundo. Es la lengua franca utilizada internacionalmente para la comunicación en ámbitos como los negocios, la diplomacia, la ciencia, la tecnología y el turismo. Dominar el inglés te permite comunicarte con personas de diferentes culturas y orígenes.
-        Oportunidades profesionales: En un mundo cada vez más globalizado, el dominio del inglés es una habilidad muy valorada en el mercado laboral. Muchas empresas multinacionales utilizan el inglés como idioma principal, lo que amplía tus oportunidades de empleo y ascenso profesional, tanto en tu país como en el extranjero.
+              <h2>¿Porque es importante aprende ingles?</h2>
+
+        Idioma global: El inglés es el idioma más hablado y extendido en el mundo. <br />
+         Es la lengua franca utilizada internacionalmente para la comunicación en ámbitos como los negocios, la diplomacia, la ciencia, la tecnología y el turismo. Dominar el inglés te permite comunicarte con personas de diferentes culturas y orígenes.
+        Oportunidades profesionales: En un mundo cada vez más globalizado, el dominio del inglés es una habilidad muy valorada en el mercado laboral. <br /> Muchas empresas multinacionales utilizan el inglés como idioma principal, lo que amplía tus oportunidades de empleo y ascenso profesional, tanto en tu país como en el extranjero.
         Acceso a información y conocimiento: Una gran parte de la información y el conocimiento disponible en internet, libros, revistas y otros medios se encuentra en inglés. Dominar este idioma te permite acceder a una vasta cantidad de recursos educativos, científicos y culturales de manera más directa.
         Viajes y turismo: El inglés es el idioma más utilizado en la industria turística a nivel mundial. Tener habilidades en este idioma facilita la comunicación con personas de otros países, la lectura de señalizaciones, la comprensión de instrucciones y el disfrute de experiencias culturales durante los viajes.
         Educación y estudios: Muchas universidades y programas académicos de prestigio en todo el mundo utilizan el inglés como lengua de instrucción. Dominar este idioma te permite acceder a una amplia gama de oportunidades educativas y programas de intercambio en otros países.

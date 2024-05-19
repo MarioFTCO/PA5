@@ -46,9 +46,7 @@ function Home() {
           nisl eget nisl.
         </p>
         <p className="a">
-          <a href="/frances" target="_blank">
-            Aprende dando click aqui
-          </a>
+            <Link to="/frances">Aprende dando click aquí.</Link>
         </p>
       </div>
       <div className="card">
@@ -60,9 +58,7 @@ function Home() {
           nisl eget nisl.
         </p>
         <p className="a">
-          <a href="/ingles" target="_blank">
-            Aprende dando click aqui
-          </a>
+          <Link to="/ingles">Aprende dando click aquí.</Link>
         </p>
       </div>
       <p className="frist">
