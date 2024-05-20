@@ -11,28 +11,28 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(value = UsuarioRoute.API + UsuarioRoute.Usuario.USER)
-
+@RequestMapping(value = "/" + UsuarioRoute.API + UsuarioRoute.Usuario.USER)
 public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
-    @PostMapping(value = UsuarioRoute.Usuario.SAVE_USUARIO)
+    @PostMapping(value = "/" + UsuarioRoute.Usuario.SAVE_USUARIO)
     public UsuarioDTO save(@RequestBody UsuarioDTO usuarioDTO){
         return usuarioService.save(usuarioDTO);
     }
-    @PostMapping(value = UsuarioRoute.Usuario.LOGIN)
-    public ResponseEntity<?> findUserAndPassword(@RequestBody UsuarioDTO usuarioDTO) {
-        Optional<UsuarioDTO> usuarioDTOOptional;
-        usuarioDTOOptional = UsuarioService.findByIdAndPassword(usuarioDTO.getUsuario(), usuarioDTO.getClave());
-        if (usuarioDTOOptional.isPresent()) {
-            return ResponseEntity.ok(usuarioDTOOptional.get());
-        }
-        return ResponseEntity.notFound().build();
-    }
 
-    @GetMapping(value = UsuarioRoute.Usuario.GET_USUARIO)
+    @PostMapping(value = "/" + UsuarioRoute.Usuario.LOGIN)
+public ResponseEntity<?> findUserAndPassword(@RequestBody UsuarioDTO usuarioDTO) {
+    Optional<UsuarioDTO> usuarioDTOOptional = usuarioService.findByIdAndPassword(usuarioDTO.getUsuario(), usuarioDTO.getClave());
+    if (usuarioDTOOptional.isPresent()) {
+        return ResponseEntity.ok(usuarioDTOOptional.get());
+    }
+    return ResponseEntity.notFound().build();
+}
+
+    @GetMapping(value = "/" + UsuarioRoute.Usuario.GET_USUARIO)
     public List<UsuarioDTO> get(){
         return usuarioService.getAll();
     }
 }
+
