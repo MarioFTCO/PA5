@@ -3,6 +3,12 @@ import { Link, Outlet } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const logoutButtom = () => {
+    
+    localStorage.removeItem("UsuarioActivo")
+    window.location.href = "/login"
+  }
+    
   return (
     <div>
     <nav className="navbar">
@@ -26,10 +32,15 @@ function Navbar() {
            Inciar Sesión
           </Link>
         </li>
-        <li className="nav-item">
+        {/*<li className="nav-item">
           <Link to="/register" className="nav-link">
             Regristrate
           </Link>
+          </li>*/}
+        <li className="nav-item">
+          <button onClick={logoutButtom}>
+            Cerrar Sesion
+          </button>
         </li>
       </ul>
     </nav>

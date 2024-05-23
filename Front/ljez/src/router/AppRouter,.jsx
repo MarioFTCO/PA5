@@ -1,24 +1,31 @@
 import { BrowserRouter, Route, Routes, } from 'react-router-dom'
 import Navbar from '../components/Navbar'
-import Home from '../screens/Home'
-import Español from '../screens/Español'
-import Ingles from '../screens/Ingles'
-import Frances from '../screens/Frances'
 import Login from '../screens/Login'
 import Register from '../screens/Register'
+import SecoundRouter from './SecoundRouter'
+import { Navigate } from 'react-router-dom'
+import { AuthUserContext } from '../context/authUser'
+import { useContext } from 'react'
 
 function AppRouter() {
+  const {isLogged}=useContext(AuthUserContext)
   return (
     <BrowserRouter>
         <Navbar/>
         <Routes>
-            <Route path="/" index element={<Login/>} />
-            <Route path="/home" element={<Home/>} />
-            <Route path="/español" element={<Español/>} />
-            <Route path="/frances" element={<Frances/>} />
-            <Route path="/ingles" element={<Ingles/>} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/register" element={<Register/>} />
+          {
+            isLogged ? (
+              <Route path="/*" element={<SecoundRouter/>} />
+            ) : (
+ 
+              <>
+              <Route path="/login" element={<Login/>} />
+              <Route path="/register" element={<Register/>} />
+              </>
+            )
+          }
+          <Route path='/*' element={<Navigate to='login'/>}/>
+            
         </Routes>
       </BrowserRouter>
   )

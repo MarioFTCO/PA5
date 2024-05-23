@@ -22,8 +22,8 @@ public class UsuarioController {
     }
 
     @PostMapping(value = "/" + UsuarioRoute.Usuario.LOGIN)
-public ResponseEntity<?> findUserAndPassword(@RequestBody UsuarioDTO usuarioDTO) {
-    Optional<UsuarioDTO> usuarioDTOOptional = usuarioService.findByIdAndPassword(usuarioDTO.getUsuario(), usuarioDTO.getClave());
+    public ResponseEntity<?> findUserAndPassword(@RequestBody UsuarioDTO usuarioDTO) {
+    Optional<UsuarioDTO> usuarioDTOOptional = UsuarioService.findByIdAndPassword(usuarioDTO.getUsuario(), usuarioDTO.getClave());
     if (usuarioDTOOptional.isPresent()) {
         return ResponseEntity.ok(usuarioDTOOptional.get());
     }
