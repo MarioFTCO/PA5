@@ -17,7 +17,7 @@ public class UsuarioService {
         usuarioRepo.save(usuario);
     }
 
-    public Usuario findByEmailAndPassword(String email, String password) {
+    public Usuario findByEmailAndPassword( String email, String password) {
         return usuarioRepo.findByEmailAndPassword(email, password);
     }
 
